@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,300&display=swap');
+:root {
+    /* backgrounds and colors */
+    --mf-bg: #1F2937;
+    --cta-bg: #3882F6;
+    --quo-bg: #E5E7EB;
+    --bu-cl: var(--cta-bg);
+    --main-cl: #F9FAF8;
+    --secondary-cl: #E5E7EB;
+    --header-link-cl: var(--secondary-cl);
+    --header-logo-cl: var(--main-cl);
+    --info-header-cl: #1F2937;
+    --quote-cl: var(--info-header-cl);
+    /* font */
+    --main: 48px extra-bold Roboto,;
+    --secondary: 18px Roboto;
+    --header-link: var(--secondary);
+    --header-logo: 24px Roboto;
+    --info-header: 36px extra-bold Roboto;
+    --quote: 36px light italic Roboto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Create nav */
+ul {
+    list-style: none;
+    display: flex;
+}
+ul a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font: var(--header-link);
+    color: var(--header-link-cl);
+}
+
+
+.main {
+    background-color: var(--mf-bg);
+    min-height: 300px;
+    
+}
+.navbar .logo {
+    color: var(--header-logo-cl);
+    font: var(--header-logo);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    min-height: 45px;
+    align-items: center;
+    padding: 10px 30px;
+}
+.navbar ul li {
+    margin-right: 15px;
+}
