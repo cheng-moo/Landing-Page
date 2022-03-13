@@ -9,8 +9,8 @@
     --secondary-cl: #E5E7EB;
     --header-link-cl: var(--secondary-cl);
     --header-logo-cl: var(--main-cl);
-    --info-header-cl: #1F2937;
-    --quote-cl: var(--info-header-cl);
+    --info-header-cl: #f0f1f1;
+    --quote-cl: #363c4b;
     /* font */
     --main: 48px Roboto;
     --secondary: 18px Roboto;
@@ -149,6 +149,9 @@ video {
 .info p {
 
 text-align: center;
+color: var(--info-header-cl);
+font-family: Roboto, sans-serif;
+margin-top: 4px;
 
 }
 .info .box-container {
@@ -167,8 +170,9 @@ text-align: center;
     justify-content: center;
     align-items: center;
     background-color: var(--quo-bg);
-    min-height: 340px;
+    min-height: 360px;
     padding: 20px auto;
+    
     
 }
 .quote .quotetxt {
@@ -204,6 +208,7 @@ text-align: center;
     align-items: center;
     border-radius: 7px;
     box-shadow: 0px 3px 10px #000000;
+    
 }
 .cta .header {
     font-family: sans-serif;
@@ -224,4 +229,13 @@ text-align: center;
     padding: 5px;
     border-radius: 7px;
     font-weight: bold;
+}
+.footer {
+    background-color: var(--mf-bg);
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--secondary);
+    color: var(--secondary-cl);
 }
