@@ -12,7 +12,7 @@
     --info-header-cl: #1F2937;
     --quote-cl: var(--info-header-cl);
     /* font */
-    --main: 48px extra-bold Roboto,;
+    --main: 48px Roboto;
     --secondary: 18px Roboto;
     --header-link: var(--secondary);
     --header-logo: 24px Roboto;
@@ -39,7 +39,12 @@ ul a {
 
 .main {
     background-color: var(--mf-bg);
-    min-height: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 50px;
+    
+    
     
 }
 .navbar .logo {
@@ -49,10 +54,39 @@ ul a {
 .navbar {
     display: flex;
     justify-content: space-between;
-    min-height: 45px;
+    min-height: 30px;
     align-items: center;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
 }
 .navbar ul li {
     margin-right: 15px;
 }
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content .header {
+    font-family: sans-serif;
+    font: var(--main);
+    color: var(--main-cl);
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.content p {
+  font-family: sans-serif;
+  font: var(--secondary);
+  color: var(--secondary-cl);  
+}
+.content button {
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 7px;
+    background-color: var(--bu-cl);
+    color: var(--main-cl);
+    font-weight: bold;
+    
+}
+
