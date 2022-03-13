@@ -17,7 +17,7 @@
     --header-link: var(--secondary);
     --header-logo: 24px Roboto;
     --info-header: 36px Roboto;
-    --quote: 36px light italic Roboto;
+    --quote: 36px Roboto;
 }
 * {
     margin: 0;
@@ -105,6 +105,15 @@ video {
     height: 400px;
     opacity: 0.8;
 }
+.overlay {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    mix-blend-mode: overlay;
+}
 
 .info .container {
     padding: 10px;
@@ -150,6 +159,69 @@ text-align: center;
     align-items: center;
     justify-content: center;
 }
-.info {
-    margin-bottom: 20px;
+
+.quote {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quo-bg);
+    min-height: 340px;
+    padding: 20px auto;
+    
+}
+.quote .quotetxt {
+    flex-basis: 50px;
+    width: 70%;
+    font: var(--quote);
+    color: var(--quote-cl);
+    font-weight: light;
+    font-style: italic;
+}
+.quote .author {
+    
+    margin-left: 500px;
+    font: var(--secondary);
+    font-weight: bold;
+    font-size: 32px;
+}
+.cta-sec {
+    background-color: var(--main-cl);
+    min-height: 250px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: var(--cta-bg);
+    padding: 10px 30px;
+    min-height: 110px;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0px 3px 10px #000000;
+}
+.cta .header {
+    font-family: sans-serif;
+    font: var(--header-link);
+    font-weight: bold;
+    color: var(--main-cl);
+    margin-bottom: 5px;
+}
+.cta p {
+    color: var(--main-cl);
+    font: var(--secondary);
+}
+.cta .signup {
+    color: var(--main-cl);
+    background-color: var(--cta-bg);
+    border: 1px solid var(--main-cl);
+    width: 90px;
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: bold;
 }
